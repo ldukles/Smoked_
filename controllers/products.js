@@ -23,16 +23,21 @@ router.get('/', (req, res) => {
     });   
 });
 
-// N
+// NEW
 router.get('/new', (req, res) => {
     res.render('products/new.ejs');
 });
 
-// D
+// DELETE
+router.delete('/:id', (req,res) => {
+    Product.findByIdAndRemove(req.params.id, () => {
+        res.redirect('/products');
+    });
+});
 
 // U
 
-// C
+// CREATE
 router.post('/', (req, res) => {
     Product.create(req.body, (err, createdProduct) => {
         res.redirect('/products');
@@ -41,7 +46,7 @@ router.post('/', (req, res) => {
 
 // E
 
-// S
+// SHOW
 router.get('/:id', (req, res) => {
     Product.findById(req.params.id, (err, foundProduct) => {
         res.render('products/show.ejs', {

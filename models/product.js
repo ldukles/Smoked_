@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 // CREATING A NEW PRODUCTSCHEMA OBJECT
-const productSchema = new Schema({
+const productSchema = new mongoose.Schema({
 name: {type: String, required: true},
 img: {type: String, required: true},
 productType: {type: String, required: true},

@@ -8,14 +8,15 @@ const mongoose = require('mongoose');
 const session = require('express-session');
 // configure method override
 const methodOverride = require('method-override');
+const productsController = require('./controllers/products');
 
-// database configuration
+// DATABASE CONFIGURATION
 mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
 
-// Database Connection Error / Success
+// DATABASE CONNECTION ERROR/SUCCESS
 const db = mongoose.connection;
 db.on('error', (err) => console.log(err.message + ' is mongod not running?'));
 db.on('connected', () => console.log('mongo connected'));
@@ -32,8 +33,9 @@ app.use(
         resave: false,
         saveUninitialized: false
     }));
-    // configure method override
-    app.use(methodOverride('_method'));
+// configure method override
+app.use(methodOverride('_method'));
+app.use('/products', productsController);
 
 
 // Routes / Controllers

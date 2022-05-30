@@ -5,7 +5,14 @@ const router = express.Router();
 const Product = require('../models/product.js');
 
 // SEED ROUTE
-const productSeed = require('../models/productSeed');
+const productSeed = require('../models/productSeed.js');
+
+router.get('/seed', (req, res) => {
+    Product.deleteMany({}, (error, allProducts) => {});
+    Product.create(productSeed, (error, data) => {
+        res.redirect('/products');
+    });
+});
 
 // INDEX
 router.get('/', (req, res) => {
@@ -13,7 +20,7 @@ router.get('/', (req, res) => {
         res.render('products/index.ejs', {
             products: foundProducts
         });
-    })   
+    });   
 });
 
 // N
@@ -37,7 +44,7 @@ router.post('/', (req, res) => {
 // S
 router.get('/:id', (req, res) => {
     Product.findById(req.params.id, (err, foundProduct) => {
-        res.render('/products/show.ejs', {
+        res.render('products/show.ejs', {
             product: foundProduct
         });
     });

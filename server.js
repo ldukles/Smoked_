@@ -36,6 +36,8 @@ app.use(
 // configure method override
 app.use(methodOverride('_method'));
 app.use('/products', productsController);
+// linking up stylesheet
+app.use('/public', express.static('public'));
 
 
 // Routes / Controllers

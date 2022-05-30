@@ -7,6 +7,55 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <h1><%= product.name %></h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/products">All Products</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Product Details</h2>
+            <ul>
+                <li>
+                    Name: <%= product.name %>
+                </li>
+                <li>
+                    <%= product.img %>
+                </li>
+                <li>
+                    Type: <%= product.productType %>
+                </li>
+                <li>
+                    Strain: <%= product.strain %>
+                </li>
+                <li>
+                    Indica or Sativa: <%= product.indicaSativa %>
+                </li>
+                <li>
+                    THC: <%= product.thc %>%
+                </li>
+                <li>
+                    Dispensary: <%= product.dispensary %>
+                </li>
+                <li>
+                    Company: <%= product.company %>
+                </li>
+                <li>
+                    rating: <%= product.rating %>
+                </li>
+                <li>
+                    Comments: <%= product.comments %>
+                </li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>

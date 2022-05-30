@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Add New Product</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Add A New Product</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/products">All Consumed Products</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="/products" method="POST">
+            <input type="text" name="name" />
+            <input type="text" name="img" />
+            <input type="text" name="productType" />
+            <input type="text" name="strain" />
+            <input type="text" name="indicaSativa" />
+            <input type="text" name="thc" />
+            <input type="text" name="dispensary" />
+            <input type="text" name="company" />
+            <input type="text" name="rating" />
+            <input type="text" name="comments" />
+            <input type="submit" value="Add New Product" />
+        </form>
+    </main>
 </body>
 </html>

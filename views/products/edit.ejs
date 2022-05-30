@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edit Product</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Edit <%= product.name %></h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/products">Product List</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Product Info:</h2>
+        <form action="/products/<%= product._id %>?_method=PUT" method="POST">
+            Name: <input type="text" name="name" value="<%= product.name %>"/><br />
+           Image: <input type="text" name="img" value="<%= product.img %>"/><br />
+           Product Type: <input type="text" name="productType" value="<%= product.productType %>"/><br />
+           Strain: <input type="text" name="strain" value="<%= product.strain %>"/><br />
+           Indica, Sativa, or Hybrid: <input type="text" name="indicaSativa" value="<%= product.indicaSativa %>"/><br />
+           THC% <input type="text" name="thc" value="<%= product.thc %>"/><br />
+           Dispensary: <input type="text" name="dispensary" value="<%= product.dispensary %>"/><br />
+           Company: <input type="text" name="company" value="<%= product.company %>" /><br />
+           Rating: <input type="text" name="rating" value="<%= product.rating %>"/><br />
+           Comments: <input type="text" name="comments" value="<%= product.comments %>"/><br />
+            <input type="submit" value="Update Product" />
+
+        </form>
+    </main>
 </body>
 </html>

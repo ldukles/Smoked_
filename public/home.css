@@ -1,8 +1,19 @@
 body {
     background-color: black;
     color: white;
+    text-align: center;
 }
-
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 150px;
+    margin-bottom: -20px;
+}
+h2{
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: 380px;
+    font-size: 18px;
+}
 #background-video {
     width: 100vw;
     height: 100vh;
@@ -14,3 +25,19 @@ body {
     bottom: 0;
     z-index: -1;
 }
+a {
+    margin: 10px;
+    font-family: sans-serif;
+}
+a:link {
+    color:blanchedalmond;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgba(123, 159, 80, 0.85);
+  }
+  
+  a:hover {
+    color: rgba(33, 70, 33, 0.85);
+  }

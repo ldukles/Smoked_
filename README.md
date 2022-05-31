@@ -44,6 +44,9 @@ Design elements implemented using HTML5, CSS3, and google fonts
 * Allow users to follow friends
 * Allow users to comment on friends posts
 * Change Sativa/Indica to terpene profiles
+* Add nearby events
+* Show top products
+* Show dispensaries nearby
 
 ## <a name="deployment"></a>Deployed Link
 

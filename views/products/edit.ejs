@@ -9,21 +9,15 @@
 </head>
 <body>
     <header>
-        <h1>Edit <%= product.name %></h1>
         <nav>
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/products">Product List</a>
-                </li>
-            </ul>
-        </nav>
+            <a href="/">Home</a>
+            <a href="/products">Product List</a>
+</nav>
+        <h1>Edit <%= product.name %></h1>
+     
     </header>
     <main>
-        <h2>Product Info:</h2>
-        <form action="/products/<%= product._id %>?_method=PUT" method="POST">
+        <form action="/products/<%= product._id %>?_method=PUT" method="POST" class="form">
             Name: <input type="text" name="name" value="<%= product.name %>"/><br />
            Image: <input type="text" name="img" value="<%= product.img %>"/><br />
            Product Type: <input type="text" name="productType" value="<%= product.productType %>"/><br />

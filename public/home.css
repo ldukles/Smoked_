@@ -42,3 +42,39 @@ a:link {
     color: rgba(73, 152, 28, 0.85);
     text-shadow: 1px 1px rgb(76, 85, 37);
   }
+
+
+  /* AGE VERIFICATION */
+  a.btn1 {
+      background-color: green;
+      color: white;
+      padding: 0.5em 0em;
+  }
+
+  a.btn2 {
+    background-color: red;
+    color: white;
+    padding: 0.5em 0em;
+}
+
+
+.box {
+    background: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+    bottom: 0;
+    margin: 0 auto;
+    z-index: 9;
+    width: 70%;
+    height: 40%;
+    display: table;
+}
+
+&:after{
+    content: '';
+    position: absolute;
+    Z-index: 0;
+    
+}

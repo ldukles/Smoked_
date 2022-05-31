@@ -16,13 +16,42 @@
 
   <body>
     <!-- render nav partial -->
-    
+
     <video id="background-video" autoplay muted poster="">
       <source src="https://i.imgur.com/72jEOaV.mp4" type="video/mp4" />
     </video>
     <header>
       <h1>Smoked</h1>
-	  <h2><%- include('./partials/nav.ejs') %></h2>
+      <h2><%- include('./partials/nav.ejs') %></h2>
     </header>
+	<!-- AGE VERIFICATION -->
+    <main>
+      <article class="box">
+        <h3>Are you over 21?</h3>
+        <p>By clicking enter, I certify that I am over 21 years of age</p>
+        <a href="#" class="btn1" id="refresh-page">ENTER</a>
+        <a href="#" class="btn2" id="reset-session">EXIT</a>
+        <small>Smoke Responsibily</small>
+      </article>
+      <div class="overlay-verify"></div>
+    </main>
+    <script>
+      		jQuery(document).ready(function($) {
+      			if (sessionStorage.getItem('advertOnce') !== 'true') {
+      				$('.box').show(); 
+      				} else {
+      					$('.box').hide();
+      				}
+
+      				$('#refresh-page').on('click',function() {
+      					$('.box').hide();
+      					sessionStorage.setItem('advertOnce', 'true');
+      				});
+      				$('#reset-session').on('click',function(){
+     				 $('.box').show();
+   					   sessionStorage.setItem('advertOnce','');
+      			});
+      		});
+    </script>
   </body>
 </html>

@@ -35,9 +35,10 @@ a:link {
   }
   
   a:visited {
-    color: rgba(123, 159, 80, 0.85);
+    color: blanchedalmond;
   }
   
   a:hover {
-    color: rgba(33, 70, 33, 0.85);
+    color: rgba(73, 152, 28, 0.85);
+    text-shadow: 1px 1px rgb(76, 85, 37);
   }

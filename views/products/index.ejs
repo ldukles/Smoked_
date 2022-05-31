@@ -28,14 +28,16 @@
     </header>
     <main>
         <h1>Consumed</h1>
-        <ul>
+        <ul class="container">
             <% for(let i = 0; i < products.length; i++){ %>
                 <li>
-                    <a href="/products/<%=products[i]._id%>"><%= products[i].name %></a>
+                    <div class="style">
+                    <a href="/products/<%=products[i]._id%>">
+                        <image src="<%= products[i].img %>" alt="Product Image" />
+                            <div class="text"><%= products[i].name %></div>
+                    </a>
+                </div>
  
-                </li>
-                <li>
-                    <image src="<%= products[i].img %>" alt="Product Image"/>
                 </li>
                 <% } %>
         </ul>

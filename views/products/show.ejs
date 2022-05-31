@@ -9,17 +9,10 @@
 </head>
 <body class="show">
     <header>
-        <h1><%= product.name %></h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/products">All Products</a>
-                </li>
-            </ul>
+        <nav class="footer">
+                    
         </nav>
+        <h1><%= product.name %></h1>
     </header>
     <main>
         <section>
@@ -52,10 +45,14 @@
                     Comments: <%= product.comments %>
                 </li>
             </ul>
+            <div class="footer">
             <a href="/products/<%= product._id %>/edit">Edit</a>
             <form action="/products/<%= product._id %>?_method=DELETE" method="POST">
                 <input type="submit" value="Delete" />
             </form>
+            <a href="/">Home</a>
+                    <a href="/products">All Products</a>
+        </div>
         </section>
     </main>
 </body>

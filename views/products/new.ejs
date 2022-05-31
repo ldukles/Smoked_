@@ -9,20 +9,15 @@
 </head>
 <body>
     <header>
+        <nav>  
+            <a href="/">Home</a>
+            <a href="/products">All Consumed Products</a>
+</nav>
         <h1>Add A New Product</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/products">All Consumed Products</a>
-                </li>
-            </ul>
-        </nav>
+        
     </header>
     <main>
-        <form action="/products" method="POST">
+        <form action="/products" method="POST" class="form">
            Name: <input type="text" name="name" />
            Image: <input type="text" name="img" />
            Product Type: <input type="text" name="productType" />

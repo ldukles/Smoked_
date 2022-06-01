@@ -11,14 +11,20 @@ body {
 
 h1 {
   font-family: "Kaushan Script", cursive;
-  font-size: 60px;  
+  font-size: 60px;
 }
 
 h2 {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 70px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 150px;
 }
-
+p {
+    text-align: center;
+    background-color: rgba(73, 71, 78, 0.754);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+}
 img {
   height: 300px;
   width: 300px;
@@ -52,7 +58,7 @@ a:visited {
 }
 
 a:hover {
-  color: rgba(73, 152, 28, 0.85);
+  color: rgb(67, 106, 87);
   text-shadow: 1px 1px rgb(249, 249, 245);
 }
 
@@ -70,6 +76,11 @@ form {
   display: flex;
   flex-wrap: wrap;
 }
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start
+}
 
 .show {
   text-align: center;
@@ -77,11 +88,33 @@ form {
 }
 
 .footer {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10%;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  width: 300px;
+}
+
+.btn {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(67, 106, 87);
+  color: white;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.comment {
+    resize: vertical;
+    height: 100px;
+
 }

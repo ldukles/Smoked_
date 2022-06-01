@@ -44,7 +44,7 @@ a:link {
   }
 
 
-  /* AGE VERIFICATION */
+  /* AGE VERIFICATION
   a.btn1 {
       background-color: green;
       color: white;
@@ -75,6 +75,6 @@ a:link {
 &:after{
     content: '';
     position: absolute;
-    Z-index: 0;
-    
+    Z-index: 0; */
+
 }

@@ -48,7 +48,7 @@ Design elements implemented using HTML5, CSS3, and google fonts
 * Show top products
 * Show dispensaries nearby
 
-## <a name="deployment"></a>Deployed Link
+## <a name="deployment" src="https://smoked-application.herokuapp.com/"></a>Deployed Link
 
 
 

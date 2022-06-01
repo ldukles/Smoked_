@@ -14,7 +14,6 @@ User can create an account if 21 years of age. Then add cannabis products they'v
 * [Design](#design)
 * [Project Next Steps](#nextsteps)
 * [Deployed App](#deployment)
-* [About the Author](#author)
 
 ## <a name="technologiesused"></a>Technologies Used
 * HTML5

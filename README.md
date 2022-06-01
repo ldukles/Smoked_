@@ -70,3 +70,6 @@ for learning how to implement mp4 videos as a background
 
 http://imgur.com
 photo upload and ease of accessibility
+
+https://www.w3schools.com/jsref/met_win_confirm.asp
+adding age verification pop-up

@@ -17,13 +17,13 @@ h1 {
 
 h2 {
   font-family: "Kaushan Script", cursive;
-  font-size: 150px;
+  font-size: 100px;
   text-align: center;
 }
 .intro {
     text-align: center;
-    background-color: rgba(246, 246, 246, 0.754);
-    color: black;
+    background-color: rgb(67, 106, 87, 0.754);
+    color: white;
     border-radius: 10px;
     padding: 10px;
     margin: 0 auto;
@@ -49,6 +49,10 @@ img {
   -webkit-filter: grayscale(0%);
   filter: none;
   transition: 1s ease;
+}
+.style {
+  font-family: "Kaushan Script", cursive;
+  font-size: 26px;
 }
 
 a:link {
@@ -117,7 +121,8 @@ nav {
   font-weight: 600;
   margin-top: 10px;
   font-family: "kaushan script", cursive;
-  cursor: url('https://i.imgur.com/ESu7CeT.png'), pointer;
+  cursor: url('../media/marijuana.png'), pointer;
+  font-size: 20px;
 }
 
 
@@ -126,3 +131,15 @@ nav {
     height: 100px;
 
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  
+}
+
+/* #map {
+  height: 100%;
+} */

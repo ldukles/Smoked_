@@ -13,6 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
       rel="stylesheet"
     />
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBnsU4VIC5lSB4hTs98REZJ0s-ipFaLoA&callback=initMap&libraries=places&v=weekly"
+      defer
+    ></script>
 	<title>MEEN Auth Starter</title>
 </head>
 <nav><%- include('./partials/nav.ejs')  %></nav>
@@ -20,11 +25,81 @@
 	
 	<br />
 	<div class="intro">
-	<p>Welcome to Smoked,</p>
+	<p>Welcome to Smoked!</p>
 		<p>A web application designed to allow you to keep track of all the cannabis products you've tried. </p>
 			<p>Smoke Responsibly</p>
 		</div>
-       <h2><a href="/products">Consumed</a></h2>
-</body>
+       <h2><a href="/products">Currently Smoking</a></h2>
+
+	 <!-- <div id="map"></div> 
+<script type="module" defer>
+function handleGetData(event) {
+	event.preventDefault();
+
+	$.ajaz(URL = {
+		url: 'https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=Dispensary&inputtype=textquery&fields=formatted_address%2Cname%2Crating%2Copening_hours%2Cgeometry&key=AIzaSyDBnsU4VIC5lSB4hTs98REZJ0s-ipFaLoA',
+		method: 'GET',
+		timeout: 0,
+		headers: {},
+	})
+
+	let map = google.maps.Map;
+	let service = google.maps.places.PlacesService;
+	let infowindow = google.maps.InfoWindow;
+	
+	function initMap() {
+ 	 const sydney = new google.maps.LatLng(-33.867, 151.195);
+
+	  infowindow = new google.maps.InfoWindow();
+
+map = new google.maps.Map(document.getElementById("map"), {
+  center: sydney,
+  zoom: 15,
+});
+
+service = new google.maps.places.PlacesService(map);
+
+service.findPlaceFromQuery(
+  request,
+  (
+	results = google.maps.places.PlaceResult[i] | null,
+	status = google.maps.places.PlacesServiceStatus
+  ) => {
+	if (status === google.maps.places.PlacesServiceStatus.OK && results) {
+	  for (let i = 0; i < results.length; i++) {
+		createMarker(results[i]);
+	  }
+
+	  map.setCenter(results[0].geometry!.location!);
+	}
+  }
+);
+}
+function createMarker(place = google.maps.places.PlaceResult) {
+  if (!place.geometry || !place.geometry.location) return;
+
+  const marker = new google.maps.Marker({
+    map,
+    position: place.geometry.location,
+  });
+
+  google.maps.event.addListener(marker, "click", () => {
+    infowindow.setContent(place.name || "");
+    infowindow.open(map);
+  });
+};
+
+declare global {
+  interface Window {
+    initMap: () => void;
+  }
+}
+window.initMap = initMap;
+export {};
+
+		 </script>
+	  -->
+
+	</body>
 
 </html>

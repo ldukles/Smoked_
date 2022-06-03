@@ -52,10 +52,9 @@ Design elements implemented using HTML5, CSS3, and google fonts
 * Show top products
 * Show dispensaries nearby
 
-## <a name="deployment" src="https://smoked-application.herokuapp.com/">Smoked Deployment Link</a>
-
-
-
+## Deployed App
+* Heroku deployment link:
+https://smoked-application.herokuapp.com/
 
 * You can view the repository:
 https://github.com/ldukles/smoked_

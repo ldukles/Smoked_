@@ -53,11 +53,13 @@ img {
 .style {
   font-family: "Kaushan Script", cursive;
   font-size: 26px;
+  
 }
 
 a:link {
   color: rgb(250, 250, 250);
   text-decoration: none;
+  margin: 20px;
 }
 
 a:visited {
@@ -84,11 +86,9 @@ form {
   flex-wrap: wrap;
 }
 nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   padding: 10px;
   margin: 10px;
+  align-items: center;
 }
 
 .show {
@@ -132,6 +132,18 @@ nav {
 
 }
 
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
@@ -139,3 +151,4 @@ nav {
 
   
 }
+

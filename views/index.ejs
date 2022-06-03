@@ -26,14 +26,35 @@
     </header>
 	<!-- AGE VERIFICATION -->
 	<main>
-		<script type="text/javascript">
-				let confirmAction = confirm("Are you 21 years of age?")
-				if (confirmAction) {
-				}else{
-					window.location = "https://giphy.com/explore/better-luck-next-time";
-				};
-		
-	</script>
+	
+  <!-- modal section -->
+  <!-- <div class="bg-modal">
+    <div class="modal-content">
+      <img src="https://imgur.com/ESu7CeT" alt="">
+      <p>Are you 21 years of age?</p>
+      <form action="">
+        <a href="" class="button1">Yes</a>
+        <a href="https://giphy.com/explore/better-luck-next-time" class="button2">No</a>
+      </form>
+    </div>
+  </div> -->
 	</main>
+  <script type="text/javascript">
+    let confirmAction = confirm("Are you 21 years of age?")
+    if (confirmAction) {
+    }else{
+    	window.location = "https://giphy.com/explore/better-luck-next-time";
+    };
+    
+    // document.addEventListener('load', function() {
+    //   document.querySelector('.bg-modal').style.display = 'flex';
+    // });
+    
+    // document.querySelector('.button1').addEventListener('click',
+    // function() {
+    //   document.querySelector('.bg-modal').style.display= 'none';
+    // });
+   
+</script>
    </body>
  </html>

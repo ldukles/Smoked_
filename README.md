@@ -2,7 +2,12 @@
 
 #### A full-stack web application for cannabis users to keep track of products they have tried
 
-<img src="./media/screenShot.png" alt="Smoked Home Page"/>
+<img src="./media/home.png" alt="Smoked Home Page"/>
+<img src="./media/login.png" alt="Smoked Home Page"/>
+<img src="./media/welcome.png" alt="Smoked Home Page"/>
+<img src="./media/allProducts2.png" alt="Smoked Home Page"/>
+<img src="./media/viewProduct.png" alt="Smoked Home Page"/>
+<img src="./media/addNew.png" alt="Smoked Home Page"/>
 
 ## Description
 User can create an account if 21 years of age. Then add cannabis products they've tried with a whole slew of information.
